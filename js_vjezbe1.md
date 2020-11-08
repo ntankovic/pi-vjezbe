@@ -19,7 +19,7 @@ license: CC BY-SA
     "peti": 322,
     "sesti": 32.0
   }
-  OUTPUT = f(INPUT) //462
+  OUTPUT = f(INPUT) //492
   ```
 
 2. Nadogradi funkciju iz zadaće **JS302** na način da se obrišu suvišni uzastopni znakovi:
