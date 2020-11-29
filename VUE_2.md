@@ -12,15 +12,15 @@ U ovoj vježbi prilagodit ćemo izgled početne stranice aplikacije i izvdojiti 
 
 ## Koraci
 
-1. Kod sa prethodnih VUE-01 vježbi možemo pruezti s GitHuba. Repozitorij: https://github.com/dbulic/instaclone (branch `wk2`). Za preuzimanje je potrebno instalirati Git klijent (za konzolu) ili GitHub Desktop aplikaciju.
+Kod sa prethodnih VUE-01 vježbi možemo pruezti s GitHuba. Repozitorij: https://github.com/fipu-nastava/fipugram (branch `step1`). Za preuzimanje je potrebno instalirati Git klijent (za konzolu) ili GitHub Desktop aplikaciju.
 
-   > ⚠️ Dalje slijede upute preko komandne linije i Git klijenta
+> ⚠️ Dalje slijede upute preko komandne linije i Git klijenta
 
 1. Otvorimo konzolu i sa `cd` naredbom navigiramo u željeni direktorij gdje želimo preuzeti prethodni projekt.
 
-1. Naredba za preuzimanje sa GitHuba glasi: `git clone https://github.com/dbulic/instaclone.git`nakon čega ulazimo u novokreirani direktorij sa `cd instaclone`.
+1. Naredba za preuzimanje sa GitHuba glasi: `git clone https://github.com/fipu-nastava/fipugram.git`nakon čega ulazimo u novokreirani direktorij sa `cd fipugram`.
 
-1. Moduli iz `npm`a ne dolaze s GitHuba, ali su definirani u datoteci `package.json` pa ih možemo instalirati, nakon čega možemo pokrenuti aplikaciju:
+1. Moduli iz `npm`a ne dolaze s GitHuba, ali su definirani u datoteci `package.json` pa ih možemo instalirati i pokrenuti aplikaciju:
 
    ```bash
    npm install

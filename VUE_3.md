@@ -12,30 +12,32 @@ U ovoj vježbi prikazivat ćemo Instaclone postove zavisno o zasebno definiranim
 
 ## Koraci
 
-1. Kod sa prethodnih VUE-02 vježbi možemo pruezti s GitHuba. Repozitorij: https://github.com/dbulic/instaclone (branch `plan-wk2`). Preuzimanje s Git-a, instaliranje paketa i pokretanje aplikaicije pojašnjeno je u prethodnim vježbama.
+1. Kod sa prethodnih VUE-02 vježbi možemo pruezti s GitHuba. Repozitorij: https://github.com/fipunastava/fipugram (branch `step2`). Preuzimanje s Git-a, instaliranje paketa i pokretanje aplikaicije pojašnjeno je u prethodnim vježbama.
   
-1. Primjetimo kako u komponenti `Home.vue` koristimo dvaput komponentu `InstagramCard` te se ona dvaput prikazuje na aplikaciji (`http://localhost:8080/`):
+2. Primjetimo kako u komponenti `Home.vue` koristimo dvaput komponentu `InstagramCard` te se ona dvaput prikazuje na aplikaciji (`http://localhost:8080/`):
 
    ```html
    <template>
      <div class="row">
        <div class="col-8">
-         <InstagramCard/>
-         <InstagramCard/>
+         <instagram-card />
+         <instagram-card />
        </div>
        <div class="col-4">
-         Mi smo sidebar
+         Sidebar
        </div>
      </div>
    </template>
    ```
 
-   Ukoliko želimo komponentu prikazati više puta možemo koristiti `v-for` modifikator Vue.js-a (dokumentacija: https://vuejs.org/v2/guide/list.html). `v-for` (`v` kao Vue, `for` kao petlja) služi za iteraciju kroz JavaScript `Array`. Potrebno je definirati polje koje ćemo prikazivati u `<script>` djelu komponente `Home.vue`. Neka taj `Array` sadrži nekoliko `url`-ova slika s Interneta. U postojeći JavaScript objekt koji se postavlja kroz `export default` u `Home.vue` dodajemo `data` metodu: 
+   
+
+   Ukoliko želimo komponentu prikazati više puta možemo koristiti `v-for` modifikator Vue.js-a (dokumentacija: https://vuejs.org/v2/guide/list.html). `v-for` (`v` kao Vue, `for` kao petlja) služi za iteraciju kroz JavaScript `Array`. Potrebno je definirati polje koje ćemo prikazivati u `<script>` djelu komponente `Home.vue`. Neka taj `Array` sadrži nekoliko `url`-ova slika s Interneta. U postojeći JavaScript objekt koji se postavlja kroz `export default` u `Home.vue` dodajemo `data` metodu koja će vratiti objekt s podacima (ključevi tog objekta koriste se u `<template>` dijelu: 
 
    ```javascript
    export default {
      ...
-     data() {
+     data() { // skraćeno od "data: function() {"
        return {
          cards: [
            "https://picsum.photos/id/1/400/400",
@@ -154,7 +156,8 @@ U ovoj vježbi prikazivat ćemo Instaclone postove zavisno o zasebno definiranim
    Slika 5. Prikaz proslijeđivanja svojstava u komponente
 
 3. Instaclone kartice sada su kompletne (prikazuju naslov, ispravnu sliku i vrijeme), a sljedeći korak je realizacija funkcionalnosti pretrage. To ćemo učiniti preko `<input>` elementa u zaglavlju aplikacije definiranog u `App.vue`:
-   <img src="art/image-20191207143248215.png" alt="image-20191207143248215" style="zoom:25%;" />
+   
+   <img src="art/image-20201124101839224.png" alt="image-20201124101839224" style="zoom:50%;" />
    **Slika**: input polje koje ćemo iskoristiti za search.
 
 
@@ -168,12 +171,6 @@ U ovoj vježbi prikazivat ćemo Instaclone postove zavisno o zasebno definiranim
    export default {
      data () {
        return store;
-     },
-   
-     methods: {
-       logout() {
-         store.authenticated = false
-       }
      }
    }
    ```
@@ -182,9 +179,6 @@ U ovoj vježbi prikazivat ćemo Instaclone postove zavisno o zasebno definiranim
 
    ```javascript
    export default {
-       authenticated: false,
-       userEmail: 'fake@email.com',
-       userName: 'Neki user',
        searchTerm: ''
    }
    ```
