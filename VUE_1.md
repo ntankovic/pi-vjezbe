@@ -22,7 +22,7 @@ U ovoj vježbi instalirati ćemo sve potrebne preduvjete za kreiranje aplikacije
    npm i -g @vue/cli
    
    vue -V
-   # @vue/cli 4.0.5
+   # @vue/cli 4.0.5 (moguće je da kod tebe bude drugačija verzija)
    ```
 
 1. Navigirati u folder u kojem želimo da se nalazi novi projekt. Kreirati novi Vue projekt pomoću naredbe (projekt ćemo nazavti `fipugram`):
@@ -49,12 +49,13 @@ U ovoj vježbi instalirati ćemo sve potrebne preduvjete za kreiranje aplikacije
    Time se aplikacija pokreće i možemo ju otvoriti na ispisanoj adresi. Aplikacija se automatski osvježava kada promijenimo i snimimo bilo koju datoteku projekta. Izvođenje aplikacije možemo zaustaviti za <CTRL+C> kombinacijom tipki.
 
 1. Instalirati **Visual Studio Code** te dodatno u njemu instalirati paket za lakše kodiranje Vue.js aplikacija `Vetur`.
-  
+
+
 <img src="art/image-20191115192105357.png" alt="image-20191115192105357" style="zoom:30%;" />
-   
+
 <center>*Slika 1. Instalacija `Vetur` plugina za Visual Studio Code.*</center>
-   
-1. Ajmo sada napraviti Login stranicu. Pretvorit ćemo postojeću `About` stranicu koja dolazi sa praznim projektom u `Login` stranicu na način da ćemo:
+
+1. Ajmo sada napraviti **Login stranicu**. Pretvorit ćemo postojeću `About` stranicu koja dolazi sa praznim projektom u `Login` stranicu na način da ćemo:
 
    * preimenovati datoteku koja sadrži tu stranicu u direktoriju `view`sa `About.vue` u `Login.vue`,
 

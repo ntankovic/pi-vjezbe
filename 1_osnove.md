@@ -151,7 +151,7 @@ else {
 
 ## Zadaci za vježbu
 
-1. **(JS-101)** Nadopuni kod da ispravno ispisuje.
+1. **(JS-101)** Nadopuni kod da ispravno ispisuje. Napomena: `prompt` neće raditi u Node.js, samo u internet pregledniku.
 
    ```javascript
    let a = prompt("Unesi prvi broj");
@@ -167,6 +167,8 @@ else {
 
 1. **(JS-102)** Napiši program koji prima broj bodova sa kolegija i ispisuje ocjenu (prema pravilniku o ocjenjivanju). Ukoliko je ocjena pozitivna ispisati teskt sa čestitkom i ocjenom.
 
+   <img src="art/1_osnove/image-20211013172954101.png" alt="image-20211013172954101" style="zoom:50%;" />
+   
    ```javascript
    let bodovi = prompt("Unesi broj bodova");
    let ocjena;

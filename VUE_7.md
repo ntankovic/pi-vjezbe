@@ -12,7 +12,7 @@ U ovoj vježbi prikazivat ćemo mogućnost spremanja dodatnih korisničkih podat
 
 ## Koraci
 
-1. Kod sa prethodnih VUE-05 vježbi možemo preuzti s GitHuba. Repozitorij: https://github.com/dbulic/instaclone (branch `plan-wk6`). Preuzimanje s Git-a, instaliranje paketa i pokretanje aplikaciije pojašnjeno je u prethodnim vježbama.
+1. Kod sa prethodnih VUE-05 vježbi možemo preuzti s GitHuba. Repozitorij: https://github.com/fipu-nastava/fipugram (branch `step6`). Preuzimanje s Git-a, instaliranje paketa i pokretanje aplikaciije pojašnjeno je u prethodnim vježbama.
 
 1. Prvo ćemo dodati prikazivanje greške prilikom registracije u `Signup.vue`. Koristit ćemo Bootstrap traku za prikaz grešaka:
   

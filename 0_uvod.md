@@ -155,8 +155,8 @@ Međutim, sa fleksibilnošću dolazi široka paleta mogućih rješenja koje se m
 
 ## Zadaci za vježbanje
 
-1. Isprobati program za zbrajanje prvih 10 brojeva u konzoli preglednika. Modificirati program na način da se uvede dodatno mapiranje (varijabla) koja će poopćiti problem i ukazati na to koliko brojeva treba zbrojiti (npr. `n=10`). Isprobati program za prvih 1000 brojeva (`n=1000`).
-1. Istražiti što je to NodeJS te instalirati na svom računalu `node` verziju 12 ili više. (Wikipedia will do...)
+1. Isprobati program iz skripte gore za zbrajanje prvih 10 brojeva. Možete ga isprobati u konzoli preglednika. Zatim je potrebno modificirati program na način da se uvede dodatno mapiranje (varijabla) koja će poopćiti problem i ukazivati na to koliko brojeva treba zbrojiti (npr. neka to bude varijabla `n=10`). Isprobati program za prvih 1000 brojeva (`n=1000`).
+1. Istražiti što je to NodeJS te instalirati na svom računalu `node` verziju 12 ili više. (Google will help...)
 1. Isprobati program za zbrajanje, ovaj puta pomoću `node`a.
 1. Istražiti čemu služi `npm` te u čemu je razlika od `yarn`a.
 1. Istražiti čemu služi `webpack`.

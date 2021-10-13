@@ -12,7 +12,7 @@ U ovoj vježbi prilagodit ćemo izgled početne stranice aplikacije i izvdojiti 
 
 ## Koraci
 
-Kod sa prethodnih VUE-01 vježbi možemo pruezti s GitHuba. Repozitorij: https://github.com/fipu-nastava/fipugram (branch `step1`). Za preuzimanje je potrebno instalirati Git klijent (za konzolu) ili GitHub Desktop aplikaciju.
+Kod sa prethodnih VUE-01 vježbi možemo pruezeti s GitHuba. Repozitorij: https://github.com/fipu-nastava/fipugram (branch `step1`). Za preuzimanje je potrebno instalirati Git klijent (za konzolu) ili GitHub Desktop aplikaciju.
 
 > ⚠️ Dalje slijede upute preko komandne linije i Git klijenta
 

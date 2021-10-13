@@ -12,9 +12,9 @@ U ovoj vježbi prikazivat ćemo integraciju navigaciju kroz kompleksnije rute i 
 
 ## Koraci
 
-1. Kod sa prethodnih VUE-05 vježbi možemo preuzti s GitHuba. Repozitorij: https://github.com/dbulic/instaclone (branch `plan-wk7`). Preuzimanje s Git-a, instaliranje paketa i pokretanje aplikaciije pojašnjeno je u prethodnim vježbama.
+1. Kod sa prethodnih VUE-07 vježbi možemo preuzeti s GitHuba. Repozitorij: https://github.com/fipu-nastava/fipugram (branch `step7`). Preuzimanje s Git-a, instaliranje paketa i pokretanje aplikaciije pojašnjeno je u prethodnim vježbama.
 
-1. U ovom ćemo koraku urediti korisničke rute kroz aplikaciju i zadužene komponente. To je jedan od važnijih koraka prilikom dizajna aplikacije. Preporuča se da svaka glavna funkcionalnost u aplikaciji ima vlastiti `url` (razmišljajte o dijeljenju tog `url` među korisnicima). Uredit ćemo rute Instaclone aplikacije na sljedeći način:
+1. U ovom ćemo koraku urediti korisničke rute kroz aplikaciju i zadužene komponente. To je jedan od važnijih koraka prilikom dizajna aplikacije. Preporuča se da svaka glavna funkcionalnost u aplikaciji ima vlastiti **endpoint, url ili rutu** (istoznačnice). To nam je važno kako bi naši korisnici mogli lako podijeliti url bilo kojeg dijela aplikacije.. Uredit ćemo rute Fipugram aplikacije na sljedeći način:
   
   <img src="art/image-20200104134918853.png" alt="image-20200104134918853" style="zoom:35%;" />
   *Slika 1. Korisničke rute kroz aplikaciju*

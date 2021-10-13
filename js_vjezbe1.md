@@ -8,7 +8,7 @@ license: CC BY-SA
 
 
 
-1. Implementiraj funkciju koja iterira kroz jedan *JSON* objekt i sumira elemente samo ako je element cijeli broj:
+1. Implementiraj funkciju koja iterira kroz jedan *Javascript* objekt i sumira elemente samo ako je element cijeli broj:
 
   ```javascript
   INPUT = {
@@ -22,14 +22,14 @@ license: CC BY-SA
   OUTPUT = f(INPUT) //492
   ```
 
-2. Nadogradi funkciju iz zadaće **JS302** na način da se obrišu suvišni uzastopni znakovi:
+2. Nadogradi funkciju iz zadaće **JS-302** na način da se obrišu suvišni uzastopni znakovi:
 
   ```javascript
   INPUT = ["banaana, jabuukka", "j1agoda", ""]
   OUTPUT = f(INPUT) //["banana", "jabuka", "j1agoda", ""]
   ```
 
-3. Nadogradi funkciju **JS403** na način da se obrišu suvišne zagrade, odnosno da funkcija vrati *string* u kojemu su zagrade valjane:
+3. Nadogradi funkciju **JS-403** na način da se obrišu suvišne zagrade, odnosno da funkcija vrati *string* u kojemu su zagrade valjane:
 
   ```javascript
   INPUT = "({[([)]})"

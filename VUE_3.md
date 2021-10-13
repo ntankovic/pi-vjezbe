@@ -12,7 +12,7 @@ U ovoj vježbi prikazivat ćemo Instaclone postove zavisno o zasebno definiranim
 
 ## Koraci
 
-1. Kod sa prethodnih VUE-02 vježbi možemo pruezti s GitHuba. Repozitorij: https://github.com/fipunastava/fipugram (branch `step2`). Preuzimanje s Git-a, instaliranje paketa i pokretanje aplikaicije pojašnjeno je u prethodnim vježbama.
+1. Kod sa prethodnih VUE-02 vježbi možemo pruezeti s GitHuba. Repozitorij: https://github.com/fipunastava/fipugram (branch `step2`). Preuzimanje s Git-a, instaliranje paketa i pokretanje aplikaicije pojašnjeno je u prethodnim vježbama.
   
 2. Primjetimo kako u komponenti `Home.vue` koristimo dvaput komponentu `InstagramCard` te se ona dvaput prikazuje na aplikaciji (`http://localhost:8080/`):
 
@@ -96,26 +96,24 @@ U ovoj vježbi prikazivat ćemo Instaclone postove zavisno o zasebno definiranim
    Još uvijek se ne prikazuju slike jer nismo navedeni podatak smjestili u `<img...>` element koji se nalazi u `<template>` dijelu i nismo proslijedili tu informaciju proslijedili u `v-for`petlji u `Home.vue` dijelu:
 
    ```html
+   // Home.vue
+   
    <template>
    ...
      	<InstagramCard v-for="card in cards" :info="card"/>
    ...
-   </template>
+</template>
    ```
 
-   Home.vue
-
-   
-
    ```html
+// InstagramCard.vue
+   
    <template>
    ...
      	<img class="card-img-top" :src="info"/>
    ...
    </template>
    ```
-
-   InstagramCard.vue
 
    Primijetimo bitnu razliku u atributima `info` i `src` u odnosu na klasične HTML atribute, a to je da ispred njih stoji znak `:` koja označava *bind*-anje atribute na JavaScript varijablu ili složeniji izraz. Oznaka `:`skraćena je od `v-bind:` i može se staviti ispred bilo kojeg klasičnog HTML atributa (npr. `src` u `img`) ili Vue svojstva (npr. `info` u `InstagramCard`). `v-bind:` označava da se parametar kojeg predajemo ne predaje kao običan `String` nego da je riječ o JavaScript varijabli ili složenijem izrazu. O ovom slučaju želimo da se u `:info` kod `InstagramCard` proslijedi `card` varijable iz `v-for` petlje, te u `:src` kod `img` elementa proslijedi svojstvo `info`koji je definiran u toj komponenti i dolazi izvana iz varijable `card`.
 
@@ -156,7 +154,7 @@ U ovoj vježbi prikazivat ćemo Instaclone postove zavisno o zasebno definiranim
    Slika 5. Prikaz proslijeđivanja svojstava u komponente
 
 3. Instaclone kartice sada su kompletne (prikazuju naslov, ispravnu sliku i vrijeme), a sljedeći korak je realizacija funkcionalnosti pretrage. To ćemo učiniti preko `<input>` elementa u zaglavlju aplikacije definiranog u `App.vue`:
-   
+  
    <img src="art/image-20201124101839224.png" alt="image-20201124101839224" style="zoom:50%;" />
    **Slika**: input polje koje ćemo iskoristiti za search.
 
@@ -170,7 +168,9 @@ U ovoj vježbi prikazivat ćemo Instaclone postove zavisno o zasebno definiranim
    
    export default {
      data () {
-       return store;
+       return {
+         store
+       };
      }
    }
    ```
@@ -186,7 +186,7 @@ U ovoj vježbi prikazivat ćemo Instaclone postove zavisno o zasebno definiranim
    Zatim dodajemo `v-model` na polje za pretragu i povezujemo ga sa JavaScript varijablom `searchTerm`:
 
    ```html
-   <input v-model="searchTerm" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+   <input v-model="store.searchTerm" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
    ```
 
    Sada možemo primjetiti da se korisnički uneseni tekst povezuje sa `searchTerm` varijablom iz `App.vue` komponente:
